@@ -52,4 +52,3 @@ def solution(n):
         cnt *= 3
     return answer
 '''
-
