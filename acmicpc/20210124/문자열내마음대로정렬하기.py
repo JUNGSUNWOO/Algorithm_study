@@ -10,5 +10,5 @@ res = solution(strings, n)
 print(res)
 
 '''
-ef strange_sort(strings, n):
+def strange_sort(strings, n):
     return sorted(strings, key=lambda x: x[n])'''
