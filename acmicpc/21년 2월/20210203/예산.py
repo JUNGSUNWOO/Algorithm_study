@@ -1,27 +1,19 @@
-def solution(d, budget):
-    d.sort()
-    answer = 0
-    for i in d:
-        print(answer)
-        budget -= i
-        answer += 1
-        if budget == 0 : print(answer);return answer
-        if budget < 0 : print(answer-1);return answer-1
-
 def solution2(d, budget):
     d.sort()
     cnt = 0
     for i in d:
-        print(cnt)
+        print(i, budget,cnt)
         budget -= i
         if budget >= 0: cnt += 1
     return cnt
 
-d = [-1,-2,-3,0.5,0.2,0.4,0,20]
-budget = 1000000000
-solution(d, budget)
+d = [0.3,0.4,1.099]
+
+budget = 1.8
 print('\n')
-solution2(d, budget)
+res2 =solution2(d, budget)
+
+print(res2)
 
 '''
 def solution(d, budget):
